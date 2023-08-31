@@ -1,0 +1,50 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <link rel="stylesheet" href="{%static 'mainstyle.css' %}">
+</head>
+<body>
+    <!---
+    <script>             // random colour at index page    
+            function getRandomColor() {
+              var letters = '0123456789ABCDEF';
+              var color = '#';
+              for (var i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+              }
+              return color; 
+            }
+        
+            function changeBackgroundColor() {
+              document.body.style.backgroundColor = getRandomColor();
+            }
+        
+            document.addEventListener('click', changeBackgroundColor);
+          </script>>
+          -->
+                                    <!-- //color ends -->
+    
+    <div class="index">                 <!-- // Heading starts -->
+        
+        <h2>Student Attendance System</h2>
+        <p>"Attend today, and achieve tomorrow."</p>
+    
+        <div class="flex">             <!-- // Heading ends -->
+        
+        </div>      
+        <div class="butt">                      <!-- // Created two buttons -->
+        <button class="btn" onclick="window.location.href = 'login';">Student login</button>
+        <!--<button class="btn">Faculty login</button>-->
+        <!--<button class="btn" onclick="window.location.href = 'stulogin.html';">login in as Faculty</button>-->
+        </div>
+      </div>
+    </div> 
+   
+  
+        
+</body>
+</html>

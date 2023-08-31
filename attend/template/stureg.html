@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registeration</title>
+    <link rel="stylesheet" href="{%static 'sreg.css' %}">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+    <div class="card">
+        <div class="card-header">
+          <div class="text-header"> 
+            <a class="ri-arrow-left-s-line" href="/login"></a>
+            <a class="ri-home-4-line" href="/"></a>
+            Register</div>
+          
+        </div>
+        <div class="card-body">
+          <form action="/login" method="post">
+          {% csrf_token %}
+            <div class="form-group">
+              <label for="username">Username:</label>
+              <input required="" class="form-control" name="username" id="username" type="text">
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input required="" class="form-control" name="email" id="email" type="email">
+            </div>
+            <div class="form-group">
+              <label for="password">Password:</label>
+              <input required="" class="form-control" name="password" id="password" type="password">
+            </div>
+            <div class="form-group">
+              <label for="confirm-password">Confirm Password:</label>
+              <input required="" class="form-control" name="confirm_password" id="confirm_password" type="password">
+            </div>
+             <button type="submit" class="btn" value="submit"> <a href="/login"></a> Submit</button>
+          </form>
+        </div>
+      </div>
+      
+</body>
+</html>
